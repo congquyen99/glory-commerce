@@ -7,5 +7,7 @@ namespace Domain.Entities
     public required string UserName { get; set; }
     public required string Email { get; set; }
     public string? Phone { get; set; }
+
+    public virtual required ICollection<UserRole> Roles { get; set; }
   }
 }
